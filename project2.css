@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.logo{
+    height: 9vh;
+}
+.logo img{
+    height: 9vh;
+}
+#navbar{
+    display: flex;
+    position: relative;
+    z-index: 3;
+
+}
+#navbar ul{
+    display: flex;
+
+}
+#navbar ul li{
+    margin-top: 3vh;
+    margin-left: 3vw;
+    list-style: none;
+}
+#navbar ul li a{
+    text-decoration: none;
+    color:white;
+    font-size: 1.1rem;
+    padding: 0.5rem;
+    transition: all 0.5s;
+    font-family: 'Playfair Display', serif;
+}
+#navbar ul li a:hover{
+     background-color:white;
+     color: black;
+     border-radius: 3rem;
+} 
+#navbar::before{
+    content: "";
+    background-color:black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1.0;
+} 
+.intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    position: relative;
+    margin-bottom: 10px;
+    font-family: 'Playfair Display', serif;
+}
+
+.intro::before{
+    content: "";
+    background-image: url(images/oliveoil.jpg);
+    position: absolute;
+    height: 101%;
+    width: 100%;
+    z-index: -1;
+    background-size: cover;
+    opacity: 0.9;
+}
+.intro h2{
+    margin: 2rem;
+    font-size: 2rem;
+    text-align: center;
+}
+.btn{
+    margin: 1rem;
+    padding: 0.6rem;
+    /* border: 2px solid brown; */
+    border-radius: 10px;
+    transition: all;
+    transition-duration: 0.3s;
+    font-family: 'Playfair Display', serif;
+}
+.btn:hover{
+    background-color: brown;
+    color: white;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.box img{
+    display: block;
+    height: 20vh;
+    width: 15vw;
+    margin: auto;
+    margin-top: 9px;
+}
+.services{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: space-between;
+}
+.services h2{
+    text-align: center;
+}
+.services p{
+    text-align: center;
+}
+.box{
+    border: 2px solid red;
+    width: 31vw;
+    margin: 0.5rem;
+    border-radius: 10px;
+    transition:all 0.3s;
+    justify-content: space-evenly;
+}
+.box:hover{
+    transform: scale(1.06);
+}
+.services::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+.contact form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 330px;
+}
+.contact{
+    height: 341px;
+    position: relative;
+}
+.input{
+    margin: 9px;
+    font-size: large;
+    font-family: 'Playfair Display', serif;
+}
+.input input{
+    width: 110%;
+    padding: 5px;
+}
+.contact::before{
+    content: "";
+    background-image: url(images/contact.jpg);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contact button{
+    width: 70px;
+}
+footer{
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+    color: white;
+}

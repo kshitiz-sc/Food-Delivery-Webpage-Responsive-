@@ -1,0 +1,7 @@
+.services{
+    flex-direction: column;
+}
+.box{
+    width: 95%;
+    margin: 10px;
+}

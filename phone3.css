@@ -1,0 +1,6 @@
+#navbar ul li a{
+    font-size: 11px;
+}
+#navbar::before{
+    height: 109%;
+}
